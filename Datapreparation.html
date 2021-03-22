@@ -1,0 +1,137 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Preparation</title>
+    <link rel="stylesheet" href="./resources/css/index2.css">
+</head>
+<body>
+    <!-- header -->
+    <nav class = 'header'>
+        <span class = 'logo'>Profile</span>
+        <ul>
+            <li><a href="/Users/ngsumyu/Desktop/profile folder/main.html">Home</a></li>
+            <li><a href="/Users/ngsumyu/Desktop/profile folder/streamlit.html">Next Project</a></li>
+     </nav>
+<!-- Banner -->
+    <div class="banner">
+        <h1>Project 1</h1>
+        <h2>Data Preparation</h2>
+    </div>
+
+<!-- Introduction -->
+    <div class= 'project'>
+        <img src = '/Users/ngsumyu/Desktop/profile folder/resources/photo/quantium.png'>  
+        <h2>Data Preparation of Quantium's Chips Sales</h2>  
+        <p>This report is a data preparation task for Quantium Data Analytics Virtual Experience Program from Forage.</p>
+        <div class = 'table'>
+            <b>Table of Content</b>
+            <ul>
+                <a href = '#Overview'><li>Project Overview </li></a>
+                <a href = '#Description'><li>Data Description</li></a>
+                <a href = '#Technical'><li>Technical Overview</li></a>
+                <a href = '#Results'><li>Results</li></a>
+              </ul>
+        </div>
+        <div id = 'Overview'>
+            <h2> Project Overview</h2>
+            <p>In this project,the customer purchase data and the transaction data have been analysed<br>
+               in order to perform Customer Segments and Products Variation.<br><br>
+               This project is to help Quantium to explore the customer segments so as to determine which<br>
+               customer segments should be targeting to decide which products should be included in the <br>
+               future market strategy
+            </p>
+            <div class="steps">
+                This project is divided into three steps:
+                <ul>
+                    <li class = 'title'>Examining and Cleaning Data</li>
+                         In this part,data sets were first examinated by Description, then were reformatted and <br> 
+                         cleaned by <b>Pandas</b>.During this section,grouping<br>
+                         the data by the product names and I found that in the data set <br>
+                         there are also Salsa products so I dropped all the product string with Salsa.<br>
+                         Also,in order to explore the data better in the following steps,I extracted 
+                         the brand name and the size <br>
+                         by splitting products names and extracting the numeric characters respectively. 
+                         Finally,two data sets were merged.<br><br>
+                    
+                    <li class = 'title'>Data Analysis and Visualisation</li>
+                        In this part,data were analysed and visualised by <b>malplotlib</b> 
+                        to defined the target customer segments.<br>
+                        To understands the customer segments pie charts and stack charts
+                        were used.
+                        <br>For example,the following charts are showing different purchasing behaviour groups <br> 
+                        of different customer segments.From this chart we noticed that sales are<br>
+                         mainly from Budget-older families, Mainstream -retirees and Mainstream - Young Singles/couples.<br>
+                        <img id = 'chart' src = '/Users/ngsumyu/Desktop/profile folder/resources/photo/project1.png'><br><br>
+                    <li class = 'title'>Deep Dive into Customer Segments</li>
+                        In the previous part,we targeted our customer segments and in this part,we would
+                        explore the reasons of <br> the high sales of these segments by investigating the populations
+                        of segments and the average<br> spending with pivot tables.
+                        Furthermore,in this part,we recognised the preferences of target customer <br> segments by calculating the
+                        market shares 
+                </ul>
+            </div>
+        </div>
+        <div id = "Description">
+            <h2>Data Description</h2>
+            <p>The data has been provided by Quantium and Forage.The dataset contains 2 database files.</p>
+            <p>The two databases files included:</p>
+            <ul>
+                <li>Customer Purchase Data</li>
+                    <ul>
+                        <li>loyalty Card Number</li>
+                        <li>Life stage of Customer</li>
+                        <li>purchasing Habit of Customer</li>
+                    </ul>
+                <li>Transaction Data</li>
+                    <ul>
+                        <li>Transaction Date</li>
+                        <li>Product Name</li>
+                        <li>Store Number</li>
+                        <li>Product Quantity</li>
+                        <li>Total Sales</li>
+                        <li>Customer Information</li>
+                    </ul>
+            </ul>
+        </div>
+        <div id = 'Technical'>
+            <h2>Technical Overview</h2>
+            <p>This project has been divided into various steps which include:</p>
+            <ul>
+                <li>Data Exploration and Cleaning</li>
+                <li>Data Visualisation</li>
+                <li>Dimensionality Reduction</li>
+                <li>Data Analysis</li>
+            </ul>
+        </div>
+        <div id = 'Results'>
+            <h2>Results</h2>
+            <p>The results have been clearly documented in the Jupyter Notebook.
+            Please click <a href="/Users/ngsumyu/Desktop/profile folder/data preparation.html" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
+                <path d="M4.715 6.542L3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.001 1.001 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+                <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 0 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 0 0-4.243-4.243L6.586 4.672z"/>
+              </svg>here</a> to view the full project</p>
+            
+        </div>  
+    </div>
+
+
+<footer>
+    <ul>
+       <li class="right"><a href="./main.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-left-square" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm11.5 5.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+            </svg></a>
+        </li>
+    
+        <li class="left"><a href="./streamlit.html"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-right-square" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4.5 5.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+        </svg></a>
+        </li>
+    </ul>
+</footer>
+
+
+
+</body>
+</html>
